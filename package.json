@@ -1,6 +1,6 @@
 {
   "name": "react-span",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",
