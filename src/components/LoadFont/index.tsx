@@ -8,7 +8,9 @@ interface Props {
 }
 export const LoadFont: React.FC<Props> = ({ config, children }) => {
   React.useEffect(() => {
-    webfont.load(config);
+    if (typeof window !== 'undefined') {
+      webfont.load(config);
+    }
   }, [config]);
   return <>{children}</>;
 };

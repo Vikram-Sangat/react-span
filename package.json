@@ -6,14 +6,21 @@
   "types": "dist/js/index.d.ts",
   "sideEffects": false,
   "homepage": "https://github.com/Vikram-Sangat/react-span",
+  "repository": {
+    "url": "https://github.com/Vikram-Sangat/react-span"
+  },
   "private": false,
   "publishConfig": {
     "access": "public",
     "tag": "prerelease"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.14",
+    "@types/styled-system": "^5.1.13",
+    "@types/webfontloader": "^1.6.33",
     "styled-components": "^5.3.1",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "webfontloader": "^1.6.28"
   },
   "peerDependencies": {
     "react": "^16.x.x||^17.x.x",
@@ -68,9 +75,6 @@
     "@types/jest": "^26.0.24",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
-    "@types/styled-components": "^5.1.14",
-    "@types/styled-system": "^5.1.13",
-    "@types/webfontloader": "^1.6.33",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
