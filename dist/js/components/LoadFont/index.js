@@ -23,7 +23,9 @@ var LoadFont = function LoadFont(_ref) {
   var config = _ref.config,
       children = _ref.children;
   React.useEffect(function () {
-    _webfontloader.default.load(config);
+    if (typeof window !== 'undefined') {
+      _webfontloader.default.load(config);
+    }
   }, [config]);
   return /*#__PURE__*/React.createElement(React.Fragment, null, children);
 };

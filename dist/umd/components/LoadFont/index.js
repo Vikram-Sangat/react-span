@@ -85,7 +85,9 @@
     children
   }) => {
     React.useEffect(() => {
-      _webfontloader2.default.load(config);
+      if (typeof window !== 'undefined') {
+        _webfontloader2.default.load(config);
+      }
     }, [config]);
     return /*#__PURE__*/React.createElement(React.Fragment, null, children);
   };

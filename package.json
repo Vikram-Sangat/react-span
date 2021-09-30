@@ -35,6 +35,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
+    "prepublish": "npm run build:lib",
     "build:lib": "npm run build:babel && npm run build:types && node ./scripts/copyTS.js",
     "build:babel": "concurrently \"npm run build:babel:esm && npm run build:babel:umd\" \"npm run build:babel:cjs\"",
     "build:babel:cjs": "cross-env BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/js --presets=@babel/env",

@@ -6,7 +6,9 @@ export const LoadFont = ({
   children
 }) => {
   React.useEffect(() => {
-    webfont.load(config);
+    if (typeof window !== 'undefined') {
+      webfont.load(config);
+    }
   }, [config]);
   return /*#__PURE__*/React.createElement(React.Fragment, null, children);
 };
